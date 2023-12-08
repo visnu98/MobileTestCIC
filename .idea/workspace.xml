@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="Framework generation" />
+    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appiumlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Appiumlog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/null.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/null.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/AppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/AppData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FirstTestCase.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,21 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701852607305</updated>
     </task>
-    <task id="LOCAL-00001" summary="Framework generation">
-      <option name="closed" value="true" />
-      <created>1702054955063</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1702054955063</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="First Push" />
-    <MESSAGE value="Framework generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework generation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
