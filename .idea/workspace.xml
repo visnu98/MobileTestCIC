@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appiumlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Appiumlog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/null.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/null.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/AppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/AppData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FirstTestCase.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2ZA6bGMxENuK06EYfThMbZGaKht" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="LoginViaNewUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ttt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LoginViaNewUsers" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LoginViaNewUsers" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="" />
+      <created>1701852607305</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701852607305</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

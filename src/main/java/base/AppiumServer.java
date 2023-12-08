@@ -13,14 +13,16 @@ public class AppiumServer {
     static AppiumDriverLocalService server;
 
     //Get the OS from AppData
-    static String os = platform.toString();
+    static String os = platform;
 
     // Start AppiumServer for Android
     private static void setAndroidInstance(){
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
         builder
-                .withAppiumJS(new File("/Users/visnu/node_modules/appium/build/lib/main.js"))
-                .usingDriverExecutable(new File("/Program Files/nodejs/node.exe"))
+                //.withAppiumJS(new File("/Users/visnu/node_modules/appium/build/lib/main.js"))
+                .withAppiumJS(new File("/opt/homebrew/lib/node_modules/appium/build/lib/main.js"))
+                //.usingDriverExecutable(new File("/Program Files/nodejs/node.exe"))
+                .usingDriverExecutable(new File("/opt/homebrew/bin/node"))
                 .usingPort(4723)
                 .withIPAddress("127.0.0.1")
                 .withTimeout(Duration.ofSeconds(20))
@@ -43,16 +45,18 @@ public class AppiumServer {
     private static void setiOSInstance() {
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
         builder
-                .withAppiumJS(new File("/Users/visnu/node_modules/appium/lib/main.js"))
-                //.usingDriverExecutable(new File("/Users/skpatro/.nvm/versions/node/v18.16.0/bin/node"))
+                //.withAppiumJS(new File("/Users/visnu/node_modules/appium/build/lib/main.js"))
+                .withAppiumJS(new File("/opt/homebrew/lib/node_modules/appium/build/lib/main.js"))
+                //.usingDriverExecutable(new File("/Program Files/nodejs/node.exe"))
+                .usingDriverExecutable(new File("/opt/homebrew/bin/node"))
                 .usingPort(4723)
-                .withArgument(GeneralServerFlag.LOCAL_TIMEZONE)
                 .withLogFile(new File("Appiumlog.txt"))
                 .withIPAddress("127.0.0.1")
-                .withTimeout(Duration.ofSeconds(10));
+                .withTimeout(Duration.ofSeconds(20))
+                .withArgument(GeneralServerFlag.USE_PLUGINS,"gestures, element-wait");
 
         if(AppData.useGesturePlugin.contains("true")){
-            builder.withArgument(GeneralServerFlag.USE_PLUGINS, "gestures");
+            //builder.withArgument(GeneralServerFlag.USE_PLUGINS, "gestures");
         }
 
         if(AppData.chromeAutoDownloadDriver.contains("true")) {
@@ -69,6 +73,9 @@ public class AppiumServer {
                 setAndroidInstance();
             } else if (os =="ios") {
                 setiOSInstance();
+            }
+            else {
+                System.out.println("Failed at getInstance: Please set ios or Android as a platform.");
             }
 
         }
