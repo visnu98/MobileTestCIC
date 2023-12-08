@@ -1,0 +1,126 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"7819c25e-7d05-45a7-aeca-5486eda04210\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/Pages/BasePage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/Pages/LoginPage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/Pages/MainPage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Appiumlog.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Appiumlog.txt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/screenshot/null.jpg\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/screenshot/null.jpg\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/base/AppData.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/base/AppData.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/base/AppiumServer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/base/AppiumServer.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/helper/BaseTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/helper/BaseTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/utils/Util.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/utils/Util.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/FirstTestCase.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/base/AppData.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/base/AppData.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/base/AppiumServer.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/base/AppiumServer.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/helper/BaseTest.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/helper/BaseTest.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/utils/Util.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/utils/Util.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/FirstTestCase.class\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 2\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2ZA6bGMxENuK06EYfThMbZGaKht\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"settings.editor.selected.configurable\": \"reference.settings.project.maven.repository.indices\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"LoginViaNewUsers\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ttt\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.LoginViaNewUsers\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.LoginViaNewUsers\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"7819c25e-7d05-45a7-aeca-5486eda04210\" name=\"Changes\" comment=\"\" />\r\n      <created>1701852607305</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1701852607305</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java</url>\r\n          <line>17</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7a195942b33eace0675688b8b452b75f944e8fce)
++++ b/.idea/workspace.xml	(date 1702056159897)
+@@ -4,27 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Appiumlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Appiumlog.txt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/screenshot/null.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/null.jpg" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/base/AppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppData.java" afterDir="false" />
++    <list default="true" id="18b9c910-878c-41d5-a370-00adbeaf820c" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Util.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTestCase.java" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/base/AppData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppData.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/utils/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Util.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/FirstTestCase.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/MainPage.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -41,23 +26,23 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 2
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 2
++}</component>
+   <component name="ProjectId" id="2ZA6bGMxENuK06EYfThMbZGaKht" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "master",
+-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="LoginViaNewUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="ttt" />
+@@ -86,6 +71,17 @@
+       <updated>1701852607305</updated>
+     </task>
+     <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+@@ -98,4 +94,7 @@
+       </breakpoints>
+     </breakpoint-manager>
+   </component>
++  <component name="com.intellij.coverage.CoverageDataManagerImpl">
++    <SUITE FILE_PATH="coverage/ttt$FirstTestCase.ic" NAME="FirstTestCase Coverage Results" MODIFIED="1701275444141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: src/main/java/base/AppiumServer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package base;\r\n\r\nimport io.appium.java_client.service.local.AppiumDriverLocalService;\r\nimport io.appium.java_client.service.local.AppiumServiceBuilder;\r\nimport io.appium.java_client.service.local.flags.GeneralServerFlag;\r\n\r\nimport java.io.File;\r\nimport java.time.Duration;\r\n\r\nimport static base.AppData.platform;\r\n\r\npublic class AppiumServer {\r\n    static AppiumDriverLocalService server;\r\n\r\n    //Get the OS from AppData\r\n    static String os = platform;\r\n\r\n    // Start AppiumServer for Android\r\n    private static void setAndroidInstance(){\r\n        AppiumServiceBuilder builder = new AppiumServiceBuilder();\r\n        builder\r\n                //.withAppiumJS(new File(\"/Users/visnu/node_modules/appium/build/lib/main.js\"))\r\n                .withAppiumJS(new File(\"/opt/homebrew/lib/node_modules/appium/build/lib/main.js\"))\r\n                //.usingDriverExecutable(new File(\"/Program Files/nodejs/node.exe\"))\r\n                .usingDriverExecutable(new File(\"/opt/homebrew/bin/node\"))\r\n                .usingPort(4723)\r\n                .withIPAddress(\"127.0.0.1\")\r\n                .withTimeout(Duration.ofSeconds(20))\r\n                .withArgument(GeneralServerFlag.USE_PLUGINS,\"gestures, element-wait\");\r\n\r\n\r\n        if(AppData.useGesturePlugin.contains(\"true\")){\r\n            //builder.withArgument(GeneralServerFlag.USE_PLUGINS, \"gestures\");\r\n        }\r\n\r\n        if(AppData.chromeAutoDownloadDriver.contains(\"true\")) {\r\n            builder.withArgument(GeneralServerFlag.ALLOW_INSECURE, \"chromedriver_autodownload\");\r\n        }\r\n        server = AppiumDriverLocalService.buildService(builder);\r\n\r\n        System.out.println(\"Appium server started with configs for Android.\");\r\n    }\r\n\r\n    //Start Appium Server for iOS\r\n    private static void setiOSInstance() {\r\n        AppiumServiceBuilder builder = new AppiumServiceBuilder();\r\n        builder\r\n                //.withAppiumJS(new File(\"/Users/visnu/node_modules/appium/build/lib/main.js\"))\r\n                .withAppiumJS(new File(\"/opt/homebrew/lib/node_modules/appium/build/lib/main.js\"))\r\n                //.usingDriverExecutable(new File(\"/Program Files/nodejs/node.exe\"))\r\n                .usingDriverExecutable(new File(\"/opt/homebrew/bin/node\"))\r\n                .usingPort(4723)\r\n                .withLogFile(new File(\"Appiumlog.txt\"))\r\n                .withIPAddress(\"127.0.0.1\")\r\n                .withTimeout(Duration.ofSeconds(20))\r\n                .withArgument(GeneralServerFlag.USE_PLUGINS,\"gestures, element-wait\");\r\n\r\n        if(AppData.useGesturePlugin.contains(\"true\")){\r\n            //builder.withArgument(GeneralServerFlag.USE_PLUGINS, \"gestures\");\r\n        }\r\n\r\n        if(AppData.chromeAutoDownloadDriver.contains(\"true\")) {\r\n            builder.withArgument(GeneralServerFlag.ALLOW_INSECURE, \"chromedriver_autodownload\");\r\n        }\r\n        server = AppiumDriverLocalService.buildService(builder);\r\n\r\n        System.out.println(\"Appium server started with configs for iOS.\");\r\n    }\r\n\r\n    private static AppiumDriverLocalService getInstance(){\r\n        if(server == null){\r\n            if(os ==\"android\"){\r\n                setAndroidInstance();\r\n            } else if (os ==\"ios\") {\r\n                setiOSInstance();\r\n            }\r\n            else {\r\n                System.out.println(\"Failed at getInstance: Please set ios or Android as a platform.\");\r\n            }\r\n\r\n        }\r\n        return server;\r\n    }\r\n\r\n\r\n\r\n    public static void start(){\r\n        getInstance().start();\r\n        System.out.println(server.getUrl());\r\n        System.out.println(server.isRunning());\r\n    }\r\n\r\n    public static void stop(){\r\n        if(server != null){\r\n            getInstance().stop();\r\n            System.out.println(\"Appium server stopped\");\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/base/AppiumServer.java b/src/main/java/base/AppiumServer.java
+--- a/src/main/java/base/AppiumServer.java	(revision 7a195942b33eace0675688b8b452b75f944e8fce)
++++ b/src/main/java/base/AppiumServer.java	(date 1702055972026)
+@@ -19,10 +19,10 @@
+     private static void setAndroidInstance(){
+         AppiumServiceBuilder builder = new AppiumServiceBuilder();
+         builder
+-                //.withAppiumJS(new File("/Users/visnu/node_modules/appium/build/lib/main.js"))
+-                .withAppiumJS(new File("/opt/homebrew/lib/node_modules/appium/build/lib/main.js"))
+-                //.usingDriverExecutable(new File("/Program Files/nodejs/node.exe"))
+-                .usingDriverExecutable(new File("/opt/homebrew/bin/node"))
++                .withAppiumJS(new File("/Users/visnu/node_modules/appium/build/lib/main.js"))
++                //.withAppiumJS(new File("/opt/homebrew/lib/node_modules/appium/build/lib/main.js"))
++                .usingDriverExecutable(new File("/Program Files/nodejs/node.exe"))
++                //.usingDriverExecutable(new File("/opt/homebrew/bin/node"))
+                 .usingPort(4723)
+                 .withIPAddress("127.0.0.1")
+                 .withTimeout(Duration.ofSeconds(20))
