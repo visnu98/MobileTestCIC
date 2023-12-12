@@ -95,13 +95,16 @@ public class AppDriverFactory {
 
     public static void terminateApp() throws Exception {
 
-        /*if (AppData.platform="ios"){
-
-
-            ((IOSDriver) AppDriver.getCurrentDriver()).terminateApp(AppDriver.getCurrentDriver().getCapabilities());
+        if (AppData.platform=="ios"){
+            ((IOSDriver) AppDriver.getCurrentDriver()).terminateApp(AppData.iOSAppPackage);
         }
-*/
+        else if (AppData.platform=="android") {
+            ((AndroidDriver) AppDriver.getCurrentDriver()).terminateApp(AppData.androidAppPackage);
+        }
 
+        else {
+            throw new Exception ("Unvalid AppPlatform, cant close the app!");
+        }
 
     }
 }

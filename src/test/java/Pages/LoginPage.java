@@ -18,9 +18,8 @@ public class LoginPage extends BasePage {
     public WebElement passwordInputField;
 
     @AndroidFindBy(xpath = "//android.widget.Button[@text=\"Log in\"]")
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Log in\"]")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Log in' or @name='Anmelden']")
     public WebElement loginBtn;
-
 
     public void peformLogin(String username, String password){
         usernameInputField.click();

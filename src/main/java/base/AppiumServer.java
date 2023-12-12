@@ -19,10 +19,10 @@ public class AppiumServer {
     private static void setAndroidInstance(){
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
         builder
-                .withAppiumJS(new File("/Users/visnu/node_modules/appium/build/lib/main.js"))
-                //.withAppiumJS(new File("/opt/homebrew/lib/node_modules/appium/build/lib/main.js"))
-                .usingDriverExecutable(new File("/Program Files/nodejs/node.exe"))
-                //.usingDriverExecutable(new File("/opt/homebrew/bin/node"))
+                //.withAppiumJS(new File("/Users/visnu/node_modules/appium/build/lib/main.js"))
+                .withAppiumJS(new File("/opt/homebrew/lib/node_modules/appium/build/lib/main.js"))
+                //.usingDriverExecutable(new File("/Program Files/nodejs/node.exe"))
+                .usingDriverExecutable(new File("/opt/homebrew/bin/node"))
                 .usingPort(4723)
                 .withIPAddress("127.0.0.1")
                 .withTimeout(Duration.ofSeconds(20))

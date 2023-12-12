@@ -4,27 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java" afterDir="false" />
+    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="Framework generation">
+      <change afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Appiumlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Appiumlog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screenshot/null.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/null.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/AppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/AppData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FirstTestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/LoginPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,24 +35,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;visnu98&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c6824565-adc2-486d-953b-ea73c5dac8a2" />
+        <option name="url" value="https://github.com/visnu98/MobileTestCIC.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2ZA6bGMxENuK06EYfThMbZGaKht" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml">
     <configuration name="LoginViaNewUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttt" />
       <option name="PACKAGE_NAME" value="" />
@@ -70,8 +84,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ttt" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter" />
+        <listener class="org.testng.reporters.FailedReporter" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" />
+      <item itemvalue="TestNG.LoginViaNewUsers" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" />
         <item itemvalue="TestNG.LoginViaNewUsers" />
       </list>
     </recent_temporary>
@@ -85,12 +126,27 @@
       <option name="presentableId" value="Default" />
       <updated>1701852607305</updated>
     </task>
+    <task id="LOCAL-00001" summary="Framework generation">
+      <option name="closed" value="true" />
+      <created>1702054955063</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702054955063</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First Push" />
+    <MESSAGE value="Framework generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework generation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java</url>
           <line>17</line>
           <option name="timeStamp" value="1" />

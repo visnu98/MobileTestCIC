@@ -12,6 +12,8 @@ import utils.Util;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
+
+//enable=false - prioritize=1 - dependsOnMethods=MethodeName - alwaysRun=true ignoriert dependency -
 public class BaseTest {
 
     @BeforeMethod
@@ -21,10 +23,14 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void closeApp(ITestResult result) throws IOException {
+    public void closeApp(ITestResult result) throws Exception {
         if(result.getStatus() == ITestResult.FAILURE){
+            System.out.println("after method");
             Util.getScreenshot(result.getTestName());
-            //((InteractsWithApps) AppDriver.getCurrentDriver().terminateApp("kek"));
+            AppDriverFactory.terminateApp();
+        }
+        else {
+            AppDriverFactory.terminateApp();
         }
         //AppDriver.getCurrentDriver().quit();
         //base.AppiumServer.stop();
