@@ -9,9 +9,7 @@ import org.testng.annotations.Test;
 public class LoginViaNewUsers extends BaseTest {
 
 
-
-
-    @Test
+    @Test(groups = {"regression","Login"} )
     public void loginViaNewUsers(){
         MainPage mainPage = new MainPage();
         LoginPage loginPage = new LoginPage();
@@ -19,7 +17,7 @@ public class LoginViaNewUsers extends BaseTest {
         loginPage.peformLogin("USER605","eLounge2019BP!");
     }
 
-    @Test
+    @Test(groups = {"regression"} )
     public void loginViaNewUsersWrongCredentials(){
         MainPage mainPage = new MainPage();
         LoginPage loginPage = new LoginPage();
@@ -27,7 +25,7 @@ public class LoginViaNewUsers extends BaseTest {
         loginPage.peformLogin("USER605","eLounge2019BP!");
     }
 
-    @Test
+    @Test(groups = {"regression"} )
     public void loginViaNewUsersSaveCredentials(){
         MainPage mainPage = new MainPage();
         LoginPage loginPage = new LoginPage();

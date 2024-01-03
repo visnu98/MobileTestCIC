@@ -2,6 +2,8 @@ package helper;
 
 import Driver.AppDriver;
 import Driver.AppDriverFactory;
+import base.AppData;
+import base.AppiumServer;
 import io.appium.java_client.InteractsWithApps;
 import org.testng.ITest;
 import org.testng.ITestResult;
@@ -16,13 +18,19 @@ import java.net.MalformedURLException;
 //enable=false - prioritize=1 - dependsOnMethods=MethodeName - alwaysRun=true ignoriert dependency -
 public class BaseTest {
 
-    @BeforeMethod
+
+    AppiumServer appiumServer = new AppiumServer();
+
+
+    @BeforeMethod (alwaysRun = true)
     public void launchApp() throws Exception {
         System.out.println("before method");
+       // AppDriverFactory.launchApp();
+
         AppDriverFactory.launchApp();
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void closeApp(ITestResult result) throws Exception {
         if(result.getStatus() == ITestResult.FAILURE){
             System.out.println("after method");
@@ -36,14 +44,17 @@ public class BaseTest {
         //base.AppiumServer.stop();
     }
 
-    @BeforeSuite
-    public void serverStart(){
+    @BeforeSuite(alwaysRun = true)
+    @Parameters({"platform"})
+    public void serverStart(String platform){
         System.out.println("before suite");
-        base.AppiumServer.start();
+        AppData.platform = System.getProperty("platform",platform);
+        System.out.println("Local variable: "+ AppData.platform);
+        appiumServer.start();
     }
 
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void serverStop(){
-        base.AppiumServer.stop();
+        appiumServer.stop();
     }
 }

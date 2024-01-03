@@ -11,6 +11,7 @@ import org.testng.SkipException;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Objects;
 
 public class AppDriverFactory {
     //static AppiumDriver driver;
@@ -45,6 +46,7 @@ public class AppDriverFactory {
     public static void launchApp() throws Exception {
 
         AppiumDriver  driver;
+
 
         switch (AppData.platform){
             case "android":
@@ -95,10 +97,11 @@ public class AppDriverFactory {
 
     public static void terminateApp() throws Exception {
 
-        if (AppData.platform=="ios"){
+
+        if (Objects.equals(AppData.platform, "ios")){
             ((IOSDriver) AppDriver.getCurrentDriver()).terminateApp(AppData.iOSAppPackage);
         }
-        else if (AppData.platform=="android") {
+        else if (Objects.equals(AppData.platform, "android")) {
             ((AndroidDriver) AppDriver.getCurrentDriver()).terminateApp(AppData.androidAppPackage);
         }
 

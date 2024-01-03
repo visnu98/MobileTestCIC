@@ -1,7 +1,17 @@
 package base;
 
+import org.testng.Reporter;
+import org.testng.annotations.Parameters;
+
 public class AppData {
-    public static String platform = System.getProperty("platform", "android");
+
+    public AppData() {
+
+    }
+
+   // public static String platform = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("platforms");
+   // public static String platform = System.getProperty("platform","ios");
+    public static String platform;
     public static String useGesturePlugin = System.getProperty("useGesturePlugin", "true");
     public static String chromeAutoDownloadDriver = System.getProperty("chromeAutoDownloadDriver", "false");
 
@@ -22,4 +32,6 @@ public class AppData {
     public static String androidAppActivity = System.getProperty("androidAppActivity","ch.ti8m.cic.mobilebanking.frontend.android.main.MainActivity");
     public static String androidNoReset = System.getProperty("androidNoReset", "true");
     public static String androidAppiumUrl = System.getProperty("androidAppiumUrl", "http://127.0.0.1:4723/");
+
+
 }

@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/tosca/IdeaProjects/MobileTestCIC">
-        <groups>
+    <parameter name="platform" value="android"/>
+    <test name="/Users/tosca/IdeaProjects/MobileTestCIC">
+                <groups>
             <run>
-                <include name="sanity"/>
-                <exclude name="regression"/>
+                <include name="regression"/>
+                <exclude name="sda"/>
             </run>
 
         </groups>
 
         <classes>
             <class name="Tests.LoginViaNewUsers">
-                <methods>
-                    <include name="loginViaNewUsers"/>
-                    <include name="loginViaNewUsersWrongCredentials"/>
-                    <include name="loginViaNewUsersSaveCredentials"/>
-                </methods>
             </class>
         </classes>
     </test>
