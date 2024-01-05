@@ -4,22 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="Framework generation">
-      <change afterPath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
+    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="Framework generation -  TestNg XML created">
+      <change afterPath="$PROJECT_DIR$/androidRegressionSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSRegressionSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/AndroidRegressionSuite/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/iOSRegressionSuite/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Appiumlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Appiumlog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screenshot/null.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/null.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/AppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/AppDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/AppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Driver/AppDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/AppDriver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/base/AppData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/LoginViaNewUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/LoginViaNewUsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +94,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/tosca/IdeaProjects/MobileTestCIC/androidRegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ttt" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/androidRegressionSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/tosca/IdeaProjects/MobileTestCIC/iOSRegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ttt" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/iOSRegressionSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttt" />
       <shortenClasspath name="NONE" />
@@ -109,13 +137,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/androidRegressionSuite.xml" />
+      <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/iOSRegressionSuite.xml" />
       <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" />
       <item itemvalue="TestNG.LoginViaNewUsers" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" />
+        <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/androidRegressionSuite.xml" />
         <item itemvalue="TestNG.LoginViaNewUsers" />
+        <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/iOSRegressionSuite.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702397138363</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Framework generation -  TestNg XML created">
+      <option name="closed" value="true" />
+      <created>1704314590990</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704314590990</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,7 +202,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First Push" />
     <MESSAGE value="Framework generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework generation" />
+    <MESSAGE value="Framework generation -  TestNg XML created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework generation -  TestNg XML created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

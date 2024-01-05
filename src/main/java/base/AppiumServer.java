@@ -12,13 +12,8 @@ import java.util.Objects;
 public class AppiumServer {
     static AppiumDriverLocalService server;
 
-    //Get the OS from AppData
-
-
-
     // Start AppiumServer for Android
-    private static void setAndroidInstance(){
-        AppiumServiceBuilder builder = new AppiumServiceBuilder();
+    private static void setAndroidInstance(AppiumServiceBuilder builder){
         builder
                 //.withAppiumJS(new File("/Users/visnu/node_modules/appium/build/lib/main.js"))
                 .withAppiumJS(new File("/opt/homebrew/lib/node_modules/appium/build/lib/main.js"))
@@ -26,7 +21,7 @@ public class AppiumServer {
                 .usingDriverExecutable(new File("/opt/homebrew/bin/node"))
                 .usingPort(4723)
                 .withIPAddress("127.0.0.1")
-                .withTimeout(Duration.ofSeconds(20))
+                .withTimeout(Duration.ofSeconds(60))
                 .withArgument(GeneralServerFlag.USE_PLUGINS,"gestures, element-wait");
 
 
@@ -43,16 +38,15 @@ public class AppiumServer {
     }
 
     //Start Appium Server for iOS
-    private static void setiOSInstance() {
+    private static void setiOSInstance(AppiumServiceBuilder builder) {
 
         System.out.println("Trying to invoke Apppium Server for iOS");
-        AppiumServiceBuilder builder = new AppiumServiceBuilder();
         builder
                 //.withAppiumJS(new File("/Users/visnu/node_modules/appium/build/lib/main.js"))
                 .withAppiumJS(new File("/opt/homebrew/lib/node_modules/appium/build/lib/main.js"))
                 //.usingDriverExecutable(new File("/Program Files/nodejs/node.exe"))
                 .usingDriverExecutable(new File("/opt/homebrew/bin/node"))
-                .usingPort(4723)
+                .usingPort(4722)
                 .withLogFile(new File("Appiumlog.txt"))
                 .withIPAddress("127.0.0.1")
                 .withTimeout(Duration.ofSeconds(60))
@@ -70,33 +64,40 @@ public class AppiumServer {
         System.out.println("Appium server started with configs for iOS.");
     }
 
-    private static AppiumDriverLocalService getInstance(){
+    /*
+    private static AppiumDriverLocalService getInstance(String platform){
 
-        if(server == null){
-            if(Objects.equals(AppData.platform, "android")){
-                setAndroidInstance();
-            } else if (Objects.equals(AppData.platform, "ios")) {
-                setiOSInstance();
-            }
-            else {
-                System.out.println("Failed at getInstance: Please set ios or Android as a platform. Currently: " + AppData.platform);
-            }
-
+        if(Objects.equals(platform, "android")){
+            setAndroidInstance(builder);
+        } else if (Objects.equals(platform, "ios")) {
+            setiOSInstance(builder);
+        }
+        else {
+            System.out.println("Failed at getInstance: Please set ios or Android as a platform. Currently: " + platform);
         }
         return server;
-    }
+    }*/
 
 
-
-    public  static void start(){
-        getInstance().start();
+    public static void start(String platform){
+        AppiumServiceBuilder builder = new AppiumServiceBuilder ();
+        if(Objects.equals(platform, "android")){
+            setAndroidInstance(builder);
+        }
+        else if (Objects.equals(platform, "ios")) {
+            setiOSInstance(builder);
+        }
+        else {
+            System.out.println("Failed at getInstance: Please set ios or Android as a platform. Currently: " + platform);
+        }
+        server.start();
         System.out.println(server.getUrl());
         System.out.println(server.isRunning());
     }
 
-    public static void stop(){
+    public static void stop(String platform){
         if(server != null){
-            getInstance().stop();
+           // getInstance(platform).stop();
             System.out.println("Appium server stopped");
         }
     }

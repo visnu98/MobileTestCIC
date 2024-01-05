@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <parameter name="platform" value="android"/>
-    <test name="/Users/tosca/IdeaProjects/MobileTestCIC">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+
+    <test name="Android">
+        <parameter name="platform" value="android"/>
                 <groups>
             <run>
                 <include name="regression"/>
@@ -16,4 +17,29 @@
             </class>
         </classes>
     </test>
+    <test name="iOS">
+        <parameter name="platform" value="ios"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+                <exclude name="sda"/>
+            </run>
+
+        </groups>
+
+        <classes>
+            <class name="Tests.LoginViaNewUsers">
+            </class>
+        </classes>
+    </test>
 </suite>
+
+
+        <!--
+            <suite-files >
+                <suite-file path="iOSRegressionSuite.xml"/>
+                <suite-file path="androidRegressionSuite.xml"/>
+
+            </suite-files>
+
+            -->

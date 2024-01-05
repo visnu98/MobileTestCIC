@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="platform" value="ios"/>
-  <test thread-count="5" name="/Users/tosca/IdeaProjects/MobileTestCIC(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="iOS(failed)">
+    <parameter name="platform" value="ios"/>
     <groups>
       <run>
         <include name="regression"/>
@@ -13,13 +13,13 @@
       <class name="Tests.LoginViaNewUsers">
         <methods>
           <include name="closeApp"/>
-          <include name="loginViaNewUsersSaveCredentials"/>
+          <include name="loginViaNewUsers"/>
           <include name="serverStop"/>
           <include name="launchApp"/>
-          <include name="loginViaNewUsersWrongCredentials"/>
           <include name="serverStart"/>
+          <include name="startAppiumServer"/>
         </methods>
       </class> <!-- Tests.LoginViaNewUsers -->
     </classes>
-  </test> <!-- /Users/tosca/IdeaProjects/MobileTestCIC(failed) -->
+  </test> <!-- iOS(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

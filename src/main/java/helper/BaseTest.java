@@ -18,43 +18,72 @@ import java.net.MalformedURLException;
 //enable=false - prioritize=1 - dependsOnMethods=MethodeName - alwaysRun=true ignoriert dependency -
 public class BaseTest {
 
+    @BeforeSuite(alwaysRun = true)
+    public void serverStart() throws Exception {
+        System.out.println("before suite");
+       // AppData.platform = System.getProperty("platform",platform);
+        //System.out.println("Local variable: "+ AppData.platform);
+        //AppiumServer.start();
+    }
 
-    AppiumServer appiumServer = new AppiumServer();
+    @BeforeClass(alwaysRun = true)
+    @Parameters({"platform"})
+    public void startAppiumServer(@Optional("ios") String platform){
+        System.out.println("BeforeClass method");
+        System.out.println("Plaform value in BeforeClass: "+platform);
+        AppiumServer.start(platform);
 
+    }
 
     @BeforeMethod (alwaysRun = true)
-    public void launchApp() throws Exception {
+    @Parameters({"platform"})
+    public void launchApp(@Optional("ios") String platform) throws Exception {
         System.out.println("before method");
-       // AppDriverFactory.launchApp();
-
-        AppDriverFactory.launchApp();
+        System.out.println("launch app for: "+platform);
+        AppDriverFactory.launchApp(platform);
     }
 
     @AfterMethod(alwaysRun = true)
-    public void closeApp(ITestResult result) throws Exception {
+    @Parameters({"platform"})
+    public void closeApp(@Optional("ios") String platform, ITestResult result) throws Exception {
         if(result.getStatus() == ITestResult.FAILURE){
             System.out.println("after method");
             Util.getScreenshot(result.getTestName());
-            AppDriverFactory.terminateApp();
+            AppDriverFactory.terminateApp(platform);
         }
         else {
-            AppDriverFactory.terminateApp();
+            AppDriverFactory.terminateApp(platform);
+            System.out.println("Closed following platform"+platform);
         }
         //AppDriver.getCurrentDriver().quit();
         //base.AppiumServer.stop();
     }
 
-    @BeforeSuite(alwaysRun = true)
+    @AfterSuite(alwaysRun = true)
+    @Parameters({"platform"})
+    public void serverStop(@Optional("ios") String platform){
+        AppiumServer.stop(platform);
+    }
+
+
+    /*
+    @BeforeMethod(alwaysRun = true)
     @Parameters({"platform"})
     public void serverStart(String platform){
-        System.out.println("before suite");
+        System.out.println("before method");
         AppData.platform = System.getProperty("platform",platform);
         System.out.println("Local variable: "+ AppData.platform);
         appiumServer.start();
-    }
+        System.out.println("Appium Server triggered for "+ AppData.platform);
+    }*/
 
-    @AfterSuite(alwaysRun = true)
-    public void serverStop(){
-        appiumServer.stop();
-    }
+    /* //local execution
+    @BeforeSuite(alwaysRun = true)
+    public void serverStart(){
+        System.out.println("before suite");
+        AppData.platform = System.getProperty("platform","ios");
+        System.out.println("Local variable: "+ AppData.platform);
+        AppiumServer.start();
+        System.out.println("Appium Server triggered for "+ AppData.platform);
+    }*/
 }

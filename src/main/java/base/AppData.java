@@ -5,12 +5,8 @@ import org.testng.annotations.Parameters;
 
 public class AppData {
 
-    public AppData() {
 
-    }
 
-   // public static String platform = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("platforms");
-   // public static String platform = System.getProperty("platform","ios");
     public static String platform;
     public static String useGesturePlugin = System.getProperty("useGesturePlugin", "true");
     public static String chromeAutoDownloadDriver = System.getProperty("chromeAutoDownloadDriver", "false");

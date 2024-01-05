@@ -13,7 +13,8 @@ public class AppDriver {
 
     public static AppDriver getInstance(){
         if(instance==null){
-            instance = new AppDriver();
+           // return instance;
+           instance = new AppDriver();
         }
         return instance;
     }
