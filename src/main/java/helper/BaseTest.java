@@ -9,6 +9,7 @@ import org.testng.ITest;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.testng.annotations.BeforeMethod;
+import utils.Environment;
 import utils.Util;
 
 import java.io.IOException;
@@ -21,9 +22,6 @@ public class BaseTest {
     @BeforeSuite(alwaysRun = true)
     public void serverStart() throws Exception {
         System.out.println("before suite");
-       // AppData.platform = System.getProperty("platform",platform);
-        //System.out.println("Local variable: "+ AppData.platform);
-        //AppiumServer.start();
     }
 
     @BeforeClass(alwaysRun = true)
@@ -36,11 +34,12 @@ public class BaseTest {
     }
 
     @BeforeMethod (alwaysRun = true)
-    @Parameters({"platform"})
-    public void launchApp(@Optional("ios") String platform) throws Exception {
+    @Parameters({"platform","device", "env"})
+    public void launchApp(@Optional("ios") String platform, @Optional("iPhone14Plus") String device, @Optional("envTST") String env) throws Exception {
         System.out.println("before method");
         System.out.println("launch app for: "+platform);
-        AppDriverFactory.launchApp(platform);
+        Environment.setEnvironment(env);
+        AppDriverFactory.launchApp(platform, device);
     }
 
     @AfterMethod(alwaysRun = true)
@@ -52,11 +51,10 @@ public class BaseTest {
             AppDriverFactory.terminateApp(platform);
         }
         else {
+            System.out.println("after method");
             AppDriverFactory.terminateApp(platform);
             System.out.println("Closed following platform"+platform);
         }
-        //AppDriver.getCurrentDriver().quit();
-        //base.AppiumServer.stop();
     }
 
     @AfterSuite(alwaysRun = true)
@@ -64,26 +62,4 @@ public class BaseTest {
     public void serverStop(@Optional("ios") String platform){
         AppiumServer.stop(platform);
     }
-
-
-    /*
-    @BeforeMethod(alwaysRun = true)
-    @Parameters({"platform"})
-    public void serverStart(String platform){
-        System.out.println("before method");
-        AppData.platform = System.getProperty("platform",platform);
-        System.out.println("Local variable: "+ AppData.platform);
-        appiumServer.start();
-        System.out.println("Appium Server triggered for "+ AppData.platform);
-    }*/
-
-    /* //local execution
-    @BeforeSuite(alwaysRun = true)
-    public void serverStart(){
-        System.out.println("before suite");
-        AppData.platform = System.getProperty("platform","ios");
-        System.out.println("Local variable: "+ AppData.platform);
-        AppiumServer.start();
-        System.out.println("Appium Server triggered for "+ AppData.platform);
-    }*/
 }

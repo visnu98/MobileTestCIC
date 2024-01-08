@@ -4,6 +4,8 @@
 
     <test name="Regression">
         <parameter name="platform" value="ios"/>
+        <parameter name="device" value="iPhone14Plus"/>
+        <parameter name="env" value="envINT"/>
         <groups>
             <run>
                 <include name="regression"/>

@@ -4,27 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="Framework generation -  TestNg XML created">
-      <change afterPath="$PROJECT_DIR$/androidRegressionSuite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iOSRegressionSuite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/AndroidRegressionSuite/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/iOSRegressionSuite/testng-failed.xml" afterDir="false" />
+    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="Framework generation -  Parallel execution">
+      <change afterPath="$PROJECT_DIR$/resources/config/SamsungS22.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/config/iPhone14Plus.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Environment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Appiumlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Appiumlog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidRegressionSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/androidRegressionSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iOSRegressionSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iOSRegressionSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/testData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screenshot/null.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/null.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/AppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/AppDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/AppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Driver/AppDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/AppDriver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/base/AppData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/LoginViaNewUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/LoginViaNewUsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/MainPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
@@ -76,18 +78,50 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/tosca/IdeaProjects/MobileTestCIC/resources/config",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/config" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml">
-    <configuration name="LoginViaNewUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginViaNewUsers.loginViaNewUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttt" />
-      <option name="PACKAGE_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.LoginViaNewUsers" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="loginViaNewUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginViaNewUsers.loginViaNewUsersSaveCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ttt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LoginViaNewUsers" />
+      <option name="METHOD_NAME" value="loginViaNewUsersSaveCredentials" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -139,15 +173,17 @@
     <list>
       <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/androidRegressionSuite.xml" />
       <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/iOSRegressionSuite.xml" />
+      <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsers" />
+      <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsersSaveCredentials" />
       <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" />
-      <item itemvalue="TestNG.LoginViaNewUsers" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" />
         <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/androidRegressionSuite.xml" />
-        <item itemvalue="TestNG.LoginViaNewUsers" />
         <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/iOSRegressionSuite.xml" />
+        <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsers" />
+        <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsersSaveCredentials" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704314590990</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Framework generation -  Parallel execution">
+      <option name="closed" value="true" />
+      <created>1704477276513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704477276513</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,17 +247,7 @@
     <MESSAGE value="First Push" />
     <MESSAGE value="Framework generation" />
     <MESSAGE value="Framework generation -  TestNg XML created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework generation -  TestNg XML created" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint suspend="NONE" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/LoginViaNewUsers.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Framework generation -  Parallel execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework generation -  Parallel execution" />
   </component>
 </project>

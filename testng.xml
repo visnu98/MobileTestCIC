@@ -4,6 +4,8 @@
 
     <test name="Android">
         <parameter name="platform" value="android"/>
+        <parameter name="device" value="SamsungS22"/>
+        <parameter name="env" value="envINT"/>
                 <groups>
             <run>
                 <include name="regression"/>
@@ -19,6 +21,8 @@
     </test>
     <test name="iOS">
         <parameter name="platform" value="ios"/>
+        <parameter name="device" value="iPhone14Plus"/>
+        <parameter name="env" value="envTST"/>
         <groups>
             <run>
                 <include name="regression"/>

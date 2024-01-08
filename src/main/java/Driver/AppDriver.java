@@ -31,4 +31,9 @@ public class AppDriver {
         driver.set(Driver);
         System.out.println("Driver is set");
     }
+
+    public static void closeDriver(){
+        getCurrentDriver().quit();
+        System.out.println("Current Driver closed!");
+    }
 }

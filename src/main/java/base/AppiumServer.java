@@ -22,16 +22,17 @@ public class AppiumServer {
                 .usingPort(4723)
                 .withIPAddress("127.0.0.1")
                 .withTimeout(Duration.ofSeconds(60))
-                .withArgument(GeneralServerFlag.USE_PLUGINS,"gestures, element-wait");
+                .withArgument(GeneralServerFlag.USE_PLUGINS,"gestures, element-wait")
+                .withArgument(GeneralServerFlag.ALLOW_INSECURE, "chromedriver_autodownload");
 
-
+/*
         if(AppData.useGesturePlugin.contains("true")){
             //builder.withArgument(GeneralServerFlag.USE_PLUGINS, "gestures");
         }
 
         if(AppData.chromeAutoDownloadDriver.contains("true")) {
             builder.withArgument(GeneralServerFlag.ALLOW_INSECURE, "chromedriver_autodownload");
-        }
+        }*/
         server = AppiumDriverLocalService.buildService(builder);
 
         System.out.println("Appium server started with configs for Android.");
@@ -64,19 +65,7 @@ public class AppiumServer {
         System.out.println("Appium server started with configs for iOS.");
     }
 
-    /*
-    private static AppiumDriverLocalService getInstance(String platform){
 
-        if(Objects.equals(platform, "android")){
-            setAndroidInstance(builder);
-        } else if (Objects.equals(platform, "ios")) {
-            setiOSInstance(builder);
-        }
-        else {
-            System.out.println("Failed at getInstance: Please set ios or Android as a platform. Currently: " + platform);
-        }
-        return server;
-    }*/
 
 
     public static void start(String platform){
@@ -97,8 +86,8 @@ public class AppiumServer {
 
     public static void stop(String platform){
         if(server != null){
-           // getInstance(platform).stop();
-            System.out.println("Appium server stopped");
+           server.stop();
+           System.out.println("Appium server stopped");
         }
     }
 }

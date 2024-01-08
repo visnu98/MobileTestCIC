@@ -4,6 +4,8 @@
 
     <test name="Regression">
         <parameter name="platform" value="android"/>
+        <parameter name="device" value="SamsungS22"/>
+        <parameter name="env" value="envTST"/>
         <groups>
             <run>
                 <include name="regression"/>

@@ -2,6 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="2" parallel="tests" name="iOS(failed)">
+    <parameter name="env" value="envTST"/>
+    <parameter name="device" value="iPhone14Plus"/>
     <parameter name="platform" value="ios"/>
     <groups>
       <run>
@@ -16,8 +18,8 @@
           <include name="loginViaNewUsers"/>
           <include name="serverStop"/>
           <include name="launchApp"/>
-          <include name="serverStart"/>
           <include name="startAppiumServer"/>
+          <include name="serverStart"/>
         </methods>
       </class> <!-- Tests.LoginViaNewUsers -->
     </classes>
