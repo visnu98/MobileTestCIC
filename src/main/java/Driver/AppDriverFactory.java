@@ -6,30 +6,28 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.options.XCUITestOptions;
-import org.openqa.selenium.WebElement;
-import org.testng.SkipException;
-import utils.Environment;
+import utils.EnvironmentHandler;
 import utils.JsonReader;
+import utils.OSHandler;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Objects;
 
 public class AppDriverFactory {
     //static AppiumDriver driver;
 
-    public static void launchApp(String platform, String device) throws Exception {
+    public static void launchApp(String device) throws Exception {
         AppiumDriver  driver;
         device ="resources/config/"+device+".json";
 
 
-        switch (platform){
+        switch (OSHandler.getCurrentOS()){
             case "android":
 
                 UiAutomator2Options aoptions = new UiAutomator2Options();
                 aoptions.setDeviceName(JsonReader.getTestData("androidDeviceName", device))
                         .setPlatformVersion(JsonReader.getTestData("androidPlatFormVersion", device))
-                        .setAppPackage(Environment.getEnvironment())
+                        .setAppPackage(EnvironmentHandler.getEnvironment())
                         .setAppActivity(AppData.androidAppActivity)
                         .setNoReset((Boolean.parseBoolean(AppData.androidNoReset)));
 
@@ -41,7 +39,7 @@ public class AppDriverFactory {
                 XCUITestOptions ioptions = new XCUITestOptions();
                 ioptions.setDeviceName(JsonReader.getTestData("iOSDeviceName", device))
                         .setPlatformVersion(JsonReader.getTestData("iOSPlatFormVersion", device))
-                        .setApp(Environment.getEnvironment())
+                        .setApp(EnvironmentHandler.getEnvironment())
                         .setUdid(JsonReader.getTestData("iOSUdid", device))
                         .setNoReset((Boolean.parseBoolean(AppData.iOSNoReset)));
                 driver = new IOSDriver(new URL(JsonReader.getTestData("iOSappiumUrl", device)), ioptions);
@@ -49,22 +47,22 @@ public class AppDriverFactory {
                 System.out.println("IOSDriver is set");
                 break;
             default:
-                throw new Exception("Invalid Platform" + platform);
+                throw new Exception("Invalid Platform" + OSHandler.getCurrentOS());
         }
     }
 
 
-    public static void terminateApp(String platform) throws Exception {
+    public static void terminateApp() throws Exception {
 
 
-        if (Objects.equals(platform, "ios")){
-            ((IOSDriver) AppDriver.getCurrentDriver()).terminateApp(Environment.getEnvironment());
-            System.out.println("Following App closed: "+platform+Environment.getEnvironment());
+        if (OSHandler.getCurrentOS().equalsIgnoreCase("ios")){
+            ((IOSDriver) AppDriver.getCurrentDriver()).terminateApp(EnvironmentHandler.getEnvironment());
+            System.out.println("Following App closed: "+OSHandler.getCurrentOS()+ EnvironmentHandler.getEnvironment());
             AppDriver.closeDriver();
         }
-        else if (Objects.equals(platform, "android")) {
-            ((AndroidDriver) AppDriver.getCurrentDriver()).terminateApp(Environment.getEnvironment());
-            System.out.println("Following App closed: "+platform+Environment.getEnvironment());
+        else if (OSHandler.getCurrentOS().equalsIgnoreCase("android")) {
+            ((AndroidDriver) AppDriver.getCurrentDriver()).terminateApp(EnvironmentHandler.getEnvironment());
+            System.out.println("Following App closed: "+OSHandler.getCurrentOS()+ EnvironmentHandler.getEnvironment());
             AppDriver.closeDriver();
         }
         else {

@@ -1,6 +1,8 @@
 package utils;
 
-public class Environment {
+public class EnvironmentHandler {
+
+    // To set and get the execution environment (envINT or envTST)
 
     public static final ThreadLocal<String> environment = new ThreadLocal<String>();
 

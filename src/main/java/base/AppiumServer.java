@@ -3,6 +3,7 @@ package base;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
+import utils.OSHandler;
 
 import java.io.File;
 import java.time.Duration;
@@ -68,23 +69,23 @@ public class AppiumServer {
 
 
 
-    public static void start(String platform){
+    public static void start(){
         AppiumServiceBuilder builder = new AppiumServiceBuilder ();
-        if(Objects.equals(platform, "android")){
+        if(OSHandler.getCurrentOS().equalsIgnoreCase("android")){
             setAndroidInstance(builder);
         }
-        else if (Objects.equals(platform, "ios")) {
+        else if (OSHandler.getCurrentOS().equalsIgnoreCase("ios")) {
             setiOSInstance(builder);
         }
         else {
-            System.out.println("Failed at getInstance: Please set ios or Android as a platform. Currently: " + platform);
+            System.out.println("Failed at getInstance: Please set ios or Android as a platform. Currently: " + OSHandler.getCurrentOS());
         }
         server.start();
         System.out.println(server.getUrl());
         System.out.println(server.isRunning());
     }
 
-    public static void stop(String platform){
+    public static void stop(){
         if(server != null){
            server.stop();
            System.out.println("Appium server stopped");
