@@ -18,7 +18,7 @@ public class AppDriverFactory {
 
     public static void launchApp(String device) throws Exception {
         AppiumDriver  driver;
-        device ="resources/config/"+device+".json";
+        device ="resources/config/device/"+device+".json";
 
 
         switch (OSHandler.getCurrentOS()){

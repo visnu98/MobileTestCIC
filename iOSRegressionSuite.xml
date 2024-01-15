@@ -14,7 +14,7 @@
         </groups>
 
         <classes>
-            <class name="Tests.LoginViaNewUsers">
+            <class name="Tests.Clients.LoginViaNewUsers">
             </class>
         </classes>
     </test>

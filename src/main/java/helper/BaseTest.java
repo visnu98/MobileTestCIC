@@ -22,7 +22,7 @@ public class BaseTest {
     @Parameters({"platform","env"})
     public void startAppiumServer(@Optional("ios") String platform, @Optional("envTST") String env){
         System.out.println("BeforeClass method");
-        System.out.println("Plaform value in BeforeClass: "+platform);
+        System.out.println("Platform value in BeforeClass: "+platform);
         OSHandler.setOS(platform);
         EnvironmentHandler.setEnvironment(env);
         AppiumServer.start();

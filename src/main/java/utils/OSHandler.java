@@ -11,7 +11,7 @@ public class OSHandler {
             System.out.println("Current OS set to: "+threadOS.get());
         }
         else {
-            System.out.println(os + " is not a correct environment! Please set envINT or envTST.");
+            System.out.println(os + " is not a correct os! Please set ios or android.");
         }
     }
 

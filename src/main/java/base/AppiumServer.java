@@ -52,7 +52,8 @@ public class AppiumServer {
                 .withLogFile(new File("Appiumlog.txt"))
                 .withIPAddress("127.0.0.1")
                 .withTimeout(Duration.ofSeconds(60))
-                .withArgument(GeneralServerFlag.USE_PLUGINS,"gestures, element-wait");
+                .withArgument(GeneralServerFlag.USE_PLUGINS,"gestures, element-wait")
+                .withArgument(() -> "--config", new File("resources/config/appiumServer" + File.separator + "serverConfig.json").toString());
 
         if(AppData.useGesturePlugin.contains("true")){
             //builder.withArgument(GeneralServerFlag.USE_PLUGINS, "gestures");
@@ -65,9 +66,6 @@ public class AppiumServer {
 
         System.out.println("Appium server started with configs for iOS.");
     }
-
-
-
 
     public static void start(){
         AppiumServiceBuilder builder = new AppiumServiceBuilder ();
