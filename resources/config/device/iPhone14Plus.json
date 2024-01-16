@@ -2,7 +2,8 @@
   "iOSPlatFormVersion": "17.1",
   "iOSDeviceName": "iPhone 14",
   "iOSUdid": "00008110-000E0C2E1A11401E",
-  "iOSappiumUrl": "http://127.0.0.1:4722/"
+  "iOSappiumUrl": "http://127.0.0.1:4722/",
+  "DevicePin": "123456"
 }
 
 

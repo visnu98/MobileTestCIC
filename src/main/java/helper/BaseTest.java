@@ -20,7 +20,7 @@ public class BaseTest {
 
     @BeforeClass(alwaysRun = true)
     @Parameters({"platform","env"})
-    public void startAppiumServer(@Optional("ios") String platform, @Optional("envTST") String env){
+    public void startAppiumServer(@Optional("ios") String platform, @Optional("envTST") String env) throws Exception {
         System.out.println("BeforeClass method");
         System.out.println("Platform value in BeforeClass: "+platform);
         OSHandler.setOS(platform);
@@ -52,8 +52,7 @@ public class BaseTest {
     }
 
     @AfterSuite(alwaysRun = true)
-    @Parameters({"platform"})
-    public void serverStop(@Optional("ios") String platform){
+    public void serverStop(){
         AppiumServer.stop();
     }
 }

@@ -15,6 +15,10 @@ public class MainPage extends BasePage {
     @iOSXCUITFindBy(xpath ="//XCUIElementTypeButton[@name='Neuer Benutzer' or @name='New users']")
     public WebElement newUsersBtn;
 
+    @AndroidFindBy(xpath = "//android.widget.Button[@text=\"U*****05\"]")
+    @iOSXCUITFindBy(accessibility = "U****05")
+    public WebElement savedCredentials;
+
 
     public void navigateToNewUsers(){
         if (Util.doesElementExistXpath(newUsersBtn)){

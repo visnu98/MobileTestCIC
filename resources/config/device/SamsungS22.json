@@ -1,6 +1,7 @@
 {
   "androidPlatFormVersion": "14",
   "androidDeviceName": "R3CT60241ZM",
-  "androidAppiumUrl": "http://127.0.0.1:4723/"
+  "androidAppiumUrl": "http://127.0.0.1:4723/",
+  "DevicePin" : "123456"
 }
 

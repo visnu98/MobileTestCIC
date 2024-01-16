@@ -8,6 +8,7 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import utils.ElementWaitHandler;
+import utils.JsonReader;
 import utils.Util;
 
 public class LandingPage extends BasePage {
@@ -28,8 +29,10 @@ public class LandingPage extends BasePage {
     @iOSXCUITFindBy(xpath ="//XCUIElementTypeButton[@name=\"Menu\"]")
     public WebElement menuStack; // Menu Butten unten im Stack
 
-    public boolean validateLandingPage(){
-        if (ElementWaitHandler.waitUntilElementVisibleB(dashboardStack,10)){
+    public boolean validateLandingPage() throws Exception {
+        //Takes default server waiting time and adds 5 seconds to wait more, since it takes longer to load the landing screen.
+        long sec = JsonReader.getTimeOutFromServerConfig()/1000+5;
+        if (ElementWaitHandler.waitUntilElementVisibleB(dashboardStack,sec)){
             return true;
         }
         else {
