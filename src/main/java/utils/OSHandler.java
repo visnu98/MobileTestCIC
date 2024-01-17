@@ -5,13 +5,13 @@ public class OSHandler {
     //To set and get the Operating System (ios or android)
     public static final ThreadLocal<String> threadOS = new ThreadLocal<String>();
 
-    public static void setOS(String os) throws Exception {
+    public static void setOS(String os) {
         if (os.equalsIgnoreCase("ios" )|| os.equalsIgnoreCase("android" )){
             threadOS.set(os);
             System.out.println("Current OS set to: "+threadOS.get());
         }
         else {
-            throw new Exception(os + " is not a correct os! Please set ios or android.");
+            throw new IllegalArgumentException(os + " is not a correct os! Please set ios or android.");
         }
     }
 

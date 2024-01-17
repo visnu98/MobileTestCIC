@@ -5,6 +5,7 @@ import base.AppiumServer;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.testng.annotations.BeforeMethod;
+import utils.DeviceHandler;
 import utils.EnvironmentHandler;
 import utils.OSHandler;
 import utils.Util;
@@ -19,22 +20,22 @@ public class BaseTest {
     }
 
     @BeforeClass(alwaysRun = true)
-    @Parameters({"platform","env"})
-    public void startAppiumServer(@Optional("ios") String platform, @Optional("envTST") String env) throws Exception {
+    @Parameters({"platform","env", "device"})
+    public void startAppiumServer(@Optional("ios") String platform, @Optional("envTST") String env, @Optional("iPhone14Plus") String device) throws Exception {
         System.out.println("BeforeClass method");
         System.out.println("Platform value in BeforeClass: "+platform);
         OSHandler.setOS(platform);
+        DeviceHandler.setDevice(device);
         EnvironmentHandler.setEnvironment(env);
         AppiumServer.start();
 
     }
 
     @BeforeMethod (alwaysRun = true)
-    @Parameters({"device"})
-    public void launchApp(@Optional("iPhone14Plus") String device) throws Exception {
+    public void launchApp() throws Exception {
         System.out.println("before method");
         System.out.println("launch app for: "+OSHandler.getCurrentOS());
-        AppDriverFactory.launchApp(device);
+        AppDriverFactory.launchApp(DeviceHandler.getCurrentDevice());
     }
 
     @AfterMethod(alwaysRun = true)

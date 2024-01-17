@@ -12,7 +12,7 @@
       </run>
     </groups>
     <classes>
-      <class name="Tests.LoginViaNewUsers">
+      <class name="Tests.Clients.LoginViaNewUsers">
         <methods>
           <include name="closeApp"/>
           <include name="loginViaNewUsers"/>

@@ -7,6 +7,7 @@ import Pages.Login.MainPage;
 import helper.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utils.DeviceHandler;
 import utils.ElementWaitHandler;
 import utils.JsonReader;
 
@@ -20,7 +21,7 @@ public class LoginViaNewUsers extends BaseTest {
         LoginPage loginPage = new LoginPage();
         LandingPage landingPage = new LandingPage();
         mainPage.navigateToNewUsers();
-        loginPage.performLogin("USER605","eLounge2019BP!");
+        loginPage.performLogin(JsonReader.getUserName("financeUser"),JsonReader.getPassword("financeUser"));
         landingPage.validateLandingPage();
     }
 
@@ -29,7 +30,7 @@ public class LoginViaNewUsers extends BaseTest {
         MainPage mainPage = new MainPage();
         LoginPage loginPage = new LoginPage();
         mainPage.navigateToNewUsers();
-        loginPage.performLogin("User555","asd!");
+        loginPage.performLogin(JsonReader.getUserName("wrongUser"),JsonReader.getPassword("wrongUser"));
         Assert.assertEquals(ElementWaitHandler.waitUntilElementVisibleE(loginPage.alertBanner,10).getText(),"The entered access data are incorrect.");
     }
 
@@ -41,7 +42,7 @@ public class LoginViaNewUsers extends BaseTest {
         LandingPage landingPage = new LandingPage();
         loginPage.navigateToMainPage();
         mainPage.savedCredentials.click();
-        pinPage.enterPin(123456);
+        pinPage.enterPin(Integer.parseInt(JsonReader.getTestData("devicePin", DeviceHandler.getDeviceFilePath(DeviceHandler.getCurrentDevice()))));
         landingPage.validateLandingPage();
     }
 

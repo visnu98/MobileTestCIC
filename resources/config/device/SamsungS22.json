@@ -1,7 +1,8 @@
 {
-  "androidPlatFormVersion": "14",
-  "androidDeviceName": "R3CT60241ZM",
-  "androidAppiumUrl": "http://127.0.0.1:4723/",
-  "DevicePin" : "123456"
+  "platFormVersion": "14",
+  "deviceName": "R3CT60241ZM",
+  "appiumUrl": "http://127.0.0.1:4723/",
+  "devicePin" : "123456",
+  "os" : "android"
 }
 

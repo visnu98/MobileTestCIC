@@ -76,7 +76,7 @@ public class AppiumServer {
             setiOSInstance(builder);
         }
         else {
-            System.out.println("Failed at getInstance: Please set ios or Android as a platform. Currently: " + OSHandler.getCurrentOS());
+            System.out.println("Failed at Appium Server start: Please set ios or Android as a platform. Currently: " + OSHandler.getCurrentOS());
         }
         server.start();
         System.out.println(server.getUrl());

@@ -5,33 +5,43 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.File;
-import java.io.FileNotFoundException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class JsonReader {
 
-    //strfileName = JSON FIle Path = "resources/testData.json"
-    static JSONObject readFile (String strFileName) {
-
+    //strfileName = JSON FIle Path = "resources/testUser.json"
+    static JSONObject readFile(String strFileName) {
         JSONObject jsonObject = null;
-        try {
-            File filename = new File(strFileName);
-            String json = FileUtils.readFileToString(filename);
-            Object obj = new JSONParser().parse(json);
-            jsonObject = (JSONObject) obj;
+        if (doesFileExists(strFileName)){
 
-        } catch (Exception e) {
-            System.out.println("Could not handle the json: " + e);
+            try {
+                File filename = new File(strFileName);
+                String json = FileUtils.readFileToString(filename);
+                Object obj = new JSONParser().parse(json);
+                jsonObject = (JSONObject) obj;
+
+            } catch (Exception e) {
+                System.out.println("Could not handle the json: " + e);
+            }
+
+        }
+        else {
+            System.out.println(strFileName + " does not exist!");
         }
         return jsonObject;
     }
 
-    public static String getTestData (String key, String strFileName){
+    public static boolean doesFileExists (String filePath){
+        return Files.exists(Paths.get(filePath));
+    }
+
+    public static String getTestData(String key, String strFileName) {
         String testDataValue = null;
         try {
             testDataValue = (String) readFile(strFileName).get(key);
-        }
-        catch (Exception e){
-            System.out.println("Could not find test data with the key: "+key);
+        } catch (Exception e) {
+            System.out.println("Could not find test data with the key: " + key);
         }
         return testDataValue;
     }
@@ -46,12 +56,28 @@ public class JsonReader {
             JSONObject elementWait = (JSONObject) plugin.get("element-wait");
 
             return (long) elementWait.get("timeout");
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             throw new Exception("Could not read Server config");
-
         }
-
-
     }
+
+    public static String getUserName (String user){
+
+        JSONObject object = readFile("resources/testData/testUser/testUser.json");
+        JSONObject testUser = (JSONObject) object.get(user);
+        System.out.println("Current eLounge User:" + testUser.get("username"));
+        return (String) testUser.get("username");
+    }
+
+    public static String getPassword (String user){
+
+        JSONObject object = readFile("resources/testData/testUser/testUser.json");
+        JSONObject testUser = (JSONObject) object.get(user);
+        System.out.println("Current eLounge User:" + testUser.get("password"));
+        return (String) testUser.get("password");
+    }
+
+
+
+
 }

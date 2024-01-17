@@ -1,0 +1,30 @@
+{
+  "financeUser": {
+    "username": "USER605",
+    "password": "eLounge2019BP!"
+  },
+  "financeUser2": {
+    "username": "USER602",
+    "password": "eLounge2019BP!"
+  },
+  "clientsUser": {
+    "username": "USER720",
+    "password": "eLounge2019BP!"
+  },
+  "clientsUser2": {
+    "username": "USER721",
+    "password": "eLounge2019BP!"
+  },
+  "investmentUser": {
+    "username": "USER518",
+    "password": "eLounge2019BP!"
+  },
+  "investmentUser2": {
+    "username": "USER518",
+    "password": "eLounge2019BP!"
+  },
+  "wrongUser": {
+    "username": "TestKek",
+    "password": "1234!"
+  }
+}

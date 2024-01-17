@@ -14,7 +14,7 @@ public class EnvironmentHandler {
             environment.set("ch.cic.mobilebanking.int");
         }
         else {
-            System.out.println(env+" is not a correct environment! Please set envINT or envTST.");
+            throw new IllegalArgumentException(env+ "is not a correct environment! Please set envINT or envTST.\"");
         }
     }
 
