@@ -19,31 +19,28 @@ public class AppDriverFactory {
 
     public static void launchApp(String device) throws Exception {
         AppiumDriver  driver;
-        device = DeviceHandler.getDeviceFilePath(device);
-
 
         switch (OSHandler.getCurrentOS()){
             case "android":
-
                 UiAutomator2Options aoptions = new UiAutomator2Options();
-                aoptions.setDeviceName(JsonReader.getTestData("deviceName", device))
-                        .setPlatformVersion(JsonReader.getTestData("platFormVersion", device))
+                aoptions.setDeviceName(DeviceHandler.getCurrentDeviceDetail("deviceName"))
+                        .setPlatformVersion(DeviceHandler.getCurrentDeviceDetail("platFormVersion"))
                         .setAppPackage(EnvironmentHandler.getEnvironment())
                         .setAppActivity(AppData.androidAppActivity)
                         .setNoReset((Boolean.parseBoolean(AppData.androidNoReset)));
 
-                driver = new AndroidDriver(new URL(JsonReader.getTestData("appiumUrl", device)), aoptions);
+                driver = new AndroidDriver(new URL(DeviceHandler.getCurrentDeviceDetail("appiumUrl")), aoptions);
                 AppDriver.setDriver(driver);
                 System.out.println("AndroidDriver is set");
                 break;
             case "ios":
                 XCUITestOptions ioptions = new XCUITestOptions();
-                ioptions.setDeviceName(JsonReader.getTestData("deviceName", device))
-                        .setPlatformVersion(JsonReader.getTestData("platFormVersion", device))
+                ioptions.setDeviceName(DeviceHandler.getCurrentDeviceDetail("deviceName"))
+                        .setPlatformVersion(DeviceHandler.getCurrentDeviceDetail("platFormVersion"))
                         .setApp(EnvironmentHandler.getEnvironment())
-                        .setUdid(JsonReader.getTestData("iOSUdid", device))
+                        .setUdid(DeviceHandler.getCurrentDeviceDetail("iOSUdid"))
                         .setNoReset((Boolean.parseBoolean(AppData.iOSNoReset)));
-                driver = new IOSDriver(new URL(JsonReader.getTestData("appiumUrl", device)), ioptions);
+                driver = new IOSDriver(new URL(DeviceHandler.getCurrentDeviceDetail("appiumUrl")), ioptions);
                 AppDriver.setDriver(driver);
                 System.out.println("IOSDriver is set");
                 break;

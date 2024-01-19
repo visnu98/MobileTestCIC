@@ -7,31 +7,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="Framework generation -  enter Pin">
-      <change afterPath="$PROJECT_DIR$/resources/testData/testUser/testUser.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DeviceHandler.java" afterDir="false" />
+    <list default="true" id="7819c25e-7d05-45a7-aeca-5486eda04210" name="Changes" comment="Framework generation -  exception handling DeviceHandler">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Appiumlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Appiumlog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config/device/SamsungS22.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config/device/SamsungS22.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config/device/iPhone14Plus.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config/device/iPhone14Plus.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/testData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iOSRegressionSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iOSRegressionSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screenshot/null.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/null.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/AppDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/AppiumServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DeviceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DeviceHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/EnvironmentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/EnvironmentHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/OSHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/OSHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Common/PinPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Common/PinPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Login/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Login/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Clients/LoginViaNewUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Clients/LoginViaNewUsers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/AppDriverFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/AppiumServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/DeviceHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/DeviceHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utils/EnvironmentHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/EnvironmentHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utils/JsonReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/JsonReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/OSHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/OSHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/Common/PinPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/Common/PinPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/Login/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/Login/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Clients/LoginViaNewUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Clients/LoginViaNewUsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,26 +96,8 @@
       <recent name="Pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/androidRegressionSuite.xml">
+  <component name="RunManager" selected="TestNG.LoginViaNewUsers.loginViaNewUsers">
     <configuration name="LoginViaNewUsers.loginViaNewUsers" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ttt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.Clients.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Clients.LoginViaNewUsers" />
-      <option name="METHOD_NAME" value="loginViaNewUsers" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginViaNewUsers.loginViaNewUsersSaveCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttt" />
       <extension name="coverage">
         <pattern>
@@ -128,7 +107,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.Clients" />
       <option name="MAIN_CLASS_NAME" value="Tests.Clients.LoginViaNewUsers" />
-      <option name="METHOD_NAME" value="loginViaNewUsersSaveCredentials" />
+      <option name="METHOD_NAME" value="loginViaNewUsers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -164,6 +143,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/tosca/IdeaProjects/MobileTestCIC/iOSRegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ttt" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/iOSRegressionSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ttt" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -176,18 +165,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/androidRegressionSuite.xml" />
+      <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/iOSRegressionSuite.xml" />
       <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsers" />
-      <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsersSaveCredentials" />
       <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsersSavedCredentials" />
       <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/androidRegressionSuite.xml" />
+        <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsers" />
         <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/testng.xml" />
         <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsersSavedCredentials" />
-        <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsers" />
-        <item itemvalue="TestNG.LoginViaNewUsers.loginViaNewUsersSaveCredentials" />
+        <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/androidRegressionSuite.xml" />
+        <item itemvalue="TestNG./Users/tosca/IdeaProjects/MobileTestCIC/iOSRegressionSuite.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705391963401</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Framework generation -  exception handling DeviceHandler">
+      <option name="closed" value="true" />
+      <created>1705513257840</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705513257840</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +293,7 @@
     <MESSAGE value="Framework generation -  OSHandler added" />
     <MESSAGE value="Framework generation -  ElementWaitHandler" />
     <MESSAGE value="Framework generation -  enter Pin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework generation -  enter Pin" />
+    <MESSAGE value="Framework generation -  exception handling DeviceHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework generation -  exception handling DeviceHandler" />
   </component>
 </project>

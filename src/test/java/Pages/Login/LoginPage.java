@@ -32,8 +32,22 @@ public class LoginPage extends BasePage {
     @AndroidFindBy(xpath = "//android.widget.Button[@text='Log in' or @text='Anmelden']")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Log in' or @name='Anmelden']")
     public WebElement loginBtn;
+    //android.widget.Button[@text="Anmelden"]
+    @AndroidFindBy(className = "android.widget.CheckBox")
+    @iOSXCUITFindBy(className = "XCUIElementTypeSwitch")
+    public WebElement saveCredTgl;
 
     public void performLogin(String username, String password){
+        toggleOff();
+        usernameInputField.click();
+        usernameInputField.sendKeys(username);
+        passwordInputField.click();
+        passwordInputField.sendKeys(password);
+        loginBtn.click();
+    }
+
+    public void performLoginAndSaveCredentials(String username, String password){
+        toggleOn();
         usernameInputField.click();
         usernameInputField.sendKeys(username);
         passwordInputField.click();
@@ -54,6 +68,37 @@ public class LoginPage extends BasePage {
         }
         else {
             System.out.println("LoginPage was not visible and skipped!");
+        }
+    }
+
+    // Toggle Methoden gegebenfalls auf Util ebene deklarieren und WebElemente als Paramter mitgeben!
+
+    //Returns toggle state -> true = toggle On
+    public boolean toggleState(){
+        boolean state = Boolean.parseBoolean(null);
+        if (OSHandler.getCurrentOS().equalsIgnoreCase("ios")){
+            state = Objects.equals("1",saveCredTgl.getAttribute("value"));
+        }
+        else if (OSHandler.getCurrentOS().equalsIgnoreCase("android")){
+            state = Boolean.parseBoolean(saveCredTgl.getAttribute("checked"));
+        }
+        else {
+            System.out.println("Could not get the state of the toggle!");
+        }
+        return state;
+    }
+
+    //Turns toggle on (if not already on)
+    public void toggleOn(){
+        if(!toggleState()){
+            saveCredTgl.click();
+        }
+    }
+
+    //Turns toggle off (if not already off)
+    public void toggleOff(){
+        if(toggleState()){
+            saveCredTgl.click();
         }
     }
 

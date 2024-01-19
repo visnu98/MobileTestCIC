@@ -36,10 +36,10 @@ public class JsonReader {
         return Files.exists(Paths.get(filePath));
     }
 
-    public static String getTestData(String key, String strFileName) {
+    public static String getTestData(String key, String strFilePath) {
         String testDataValue = null;
         try {
-            testDataValue = (String) readFile(strFileName).get(key);
+            testDataValue = (String) readFile(strFilePath).get(key);
         } catch (Exception e) {
             System.out.println("Could not find test data with the key: " + key);
         }

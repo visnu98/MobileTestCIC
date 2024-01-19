@@ -25,7 +25,7 @@ public class LoginViaNewUsers extends BaseTest {
         landingPage.validateLandingPage();
     }
 
-    @Test(groups = {"regression"} )
+    @Test(groups = {"regression", "login"} )
     public void loginViaNewUsersWrongCredentials() throws InterruptedException {
         MainPage mainPage = new MainPage();
         LoginPage loginPage = new LoginPage();
@@ -34,7 +34,7 @@ public class LoginViaNewUsers extends BaseTest {
         Assert.assertEquals(ElementWaitHandler.waitUntilElementVisibleE(loginPage.alertBanner,10).getText(),"The entered access data are incorrect.");
     }
 
-    @Test(groups = {"regression","envTST"} )
+    @Test(groups = {"regression", "login", "envTST"} )
     public void loginViaNewUsersSavedCredentials() throws Exception {
         MainPage mainPage = new MainPage();
         LoginPage loginPage = new LoginPage();
@@ -42,10 +42,22 @@ public class LoginViaNewUsers extends BaseTest {
         LandingPage landingPage = new LandingPage();
         loginPage.navigateToMainPage();
         mainPage.savedCredentials.click();
-        pinPage.enterPin(Integer.parseInt(JsonReader.getTestData("devicePin", DeviceHandler.getDeviceFilePath(DeviceHandler.getCurrentDevice()))));
+        pinPage.enterPin(Integer.parseInt(DeviceHandler.getCurrentDeviceDetail("devicePin")));
         landingPage.validateLandingPage();
     }
 
+
+    @Test(groups = {"regression", "login","new"})
+    public void loginViaNewUsersSaveCredentials() throws Exception {
+        MainPage mainPage = new MainPage();
+        LoginPage loginPage = new LoginPage();
+        LandingPage landingPage = new LandingPage();
+        PinPage pinPage = new PinPage();
+        mainPage.navigateToNewUsers();
+        loginPage.performLoginAndSaveCredentials(JsonReader.getUserName("financeUser"),JsonReader.getPassword("financeUser"));
+        pinPage.enterPin(Integer.parseInt(DeviceHandler.getCurrentDeviceDetail("devicePin")));
+        landingPage.validateLandingPage();
+    }
 
 
 }

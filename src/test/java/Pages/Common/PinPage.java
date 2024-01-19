@@ -12,8 +12,11 @@ import utils.OSHandler;
 
 public class PinPage extends BasePage {
 
+    //Passcode field
+    //XCUIElementTypeSecureTextField
+    //(//XCUIElementTypeSecureTextField[@name="Passcode field"])[1]
     @AndroidFindBy(id = "com.samsung.android.biometrics.app.setting:id/lockPassword")
-    @iOSXCUITFindBy(xpath ="(//XCUIElementTypeSecureTextField[@name=\"Passcode field\"])[2]")
+    @iOSXCUITFindBy(accessibility = "Passcode field")
     public WebElement pinField;
 
     @AndroidFindBy(id ="com.samsung.android.biometrics.app.setting:id/btn_cancel")
