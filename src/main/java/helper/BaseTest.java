@@ -17,8 +17,8 @@ public class BaseTest {
     }
 
     @BeforeClass(alwaysRun = true)
-    @Parameters({"platform","env", "device"})
-    public void startAppiumServer(@Optional("ios") String platform, @Optional("envTST") String env, @Optional("iPhone14Plus") String device) throws Exception {
+    @Parameters({"env", "device"})
+    public void startAppiumServer(@Optional("envTST") String env, @Optional("iPhone14Plus") String device) throws Exception {
         System.out.println("BeforeClass method");
         DeviceHandler.setDevice(device);
         OSHandler.setOS(DeviceHandler.getCurrentDeviceDetail("os"));
@@ -31,20 +31,20 @@ public class BaseTest {
     public void launchApp() throws Exception {
         System.out.println("before method");
         System.out.println("launch app for: "+OSHandler.getCurrentOS());
-        AppDriverFactory.launchApp(DeviceHandler.getCurrentDevice());
+        AppDriverFactory.launchApp();
     }
 
     @AfterMethod(alwaysRun = true)
     public void closeApp(ITestResult result) throws Exception {
         if(result.getStatus() == ITestResult.FAILURE){
             System.out.println("after method");
-            Util.getScreenshot(result.getTestName());
+            Util.getScreenshot(result);
             AppDriverFactory.terminateApp();
         }
         else {
             System.out.println("after method");
             AppDriverFactory.terminateApp();
-            System.out.println("Closed following platform"+OSHandler.getCurrentOS());
+            System.out.println("Closed following platform "+OSHandler.getCurrentOS());
         }
     }
 

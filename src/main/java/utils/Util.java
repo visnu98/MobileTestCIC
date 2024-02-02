@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,10 +16,10 @@ import java.util.Set;
 
 public class Util {
 
-    public static String getScreenshot(String imagename) throws IOException, IOException {
+    public static String getScreenshot(ITestResult iTestListener) throws IOException, IOException {
         TakesScreenshot ts = (TakesScreenshot) AppDriver.getCurrentDriver();
         File f = ts.getScreenshotAs(OutputType.FILE);
-        String filePath = "./screenshot/"+imagename+".jpg";
+        String filePath = "./screenshot/"+iTestListener.getMethod().getConstructorOrMethod().getName()+".jpg";
         FileUtils.copyFile(f, new File(filePath));
         return filePath;
     }

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="helper.AllureListener"/>
+    </listeners>
 
     <test name="Android">
-        <parameter name="platform" value="android"/>
+
         <parameter name="device" value="SamsungS22"/>
         <parameter name="env" value="envTST"/>
-                <groups>
+        <groups>
             <run>
                 <include name="regression"/>
                 <exclude name="sda"/>
@@ -20,7 +23,7 @@
         </classes>
     </test>
     <test name="iOS">
-        <parameter name="platform" value="ios"/>
+
         <parameter name="device" value="iPhone14Plus"/>
         <parameter name="env" value="envTST"/>
         <groups>

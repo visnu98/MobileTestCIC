@@ -3,8 +3,7 @@
   "deviceName": "iPhone 14",
   "iOSUdid": "00008110-000E0C2E1A11401E",
   "appiumUrl": "http://127.0.0.1:4722/",
+  "appiumUrl1": "http://10.22.53.11:4722/",
   "devicePin": "123456",
   "os" : "ios"
 }
-
-

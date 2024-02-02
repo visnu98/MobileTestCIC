@@ -1,9 +1,11 @@
 package Tests.Clients;
 
+import Driver.AppDriver;
 import Pages.Common.PinPage;
 import Pages.Login.LandingPage;
 import Pages.Login.LoginPage;
 import Pages.Login.MainPage;
+import Pages.Navigation.MenuStackPage;
 import helper.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -35,7 +37,8 @@ public class LoginViaNewUsers extends BaseTest {
     }
 
     @Test(groups = {"regression", "login", "envTST"} )
-    public void loginViaNewUsersSavedCredentials() throws Exception {
+    public void
+    loginViaNewUsersSavedCredentials() throws Exception {
         MainPage mainPage = new MainPage();
         LoginPage loginPage = new LoginPage();
         PinPage pinPage = new PinPage();
@@ -53,10 +56,15 @@ public class LoginViaNewUsers extends BaseTest {
         LoginPage loginPage = new LoginPage();
         LandingPage landingPage = new LandingPage();
         PinPage pinPage = new PinPage();
+        MenuStackPage menuStackPage = new MenuStackPage();
         mainPage.navigateToNewUsers();
         loginPage.performLoginAndSaveCredentials(JsonReader.getUserName("financeUser"),JsonReader.getPassword("financeUser"));
         pinPage.enterPin(Integer.parseInt(DeviceHandler.getCurrentDeviceDetail("devicePin")));
-        landingPage.validateLandingPage();
+        while (!menuStackPage.logoutBtn.isDisplayed()){
+            landingPage.menuStack.click();
+        }
+        menuStackPage.performLogOut();
+
     }
 
 

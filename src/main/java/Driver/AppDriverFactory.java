@@ -8,16 +8,14 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.options.XCUITestOptions;
 import utils.DeviceHandler;
 import utils.EnvironmentHandler;
-import utils.JsonReader;
 import utils.OSHandler;
 
 import java.net.URL;
-import java.util.Objects;
 
 public class AppDriverFactory {
     //static AppiumDriver driver;
 
-    public static void launchApp(String device) throws Exception {
+    public static void launchApp() throws Exception {
         AppiumDriver  driver;
 
         switch (OSHandler.getCurrentOS()){
@@ -55,12 +53,12 @@ public class AppDriverFactory {
 
         if (OSHandler.getCurrentOS().equalsIgnoreCase("ios" )){
             ((IOSDriver) AppDriver.getCurrentDriver()).terminateApp(EnvironmentHandler.getEnvironment());
-            System.out.println("Following App closed: "+OSHandler.getCurrentOS()+ EnvironmentHandler.getEnvironment());
+            System.out.println("Platform: "+OSHandler.getCurrentOS()+ " "+EnvironmentHandler.getEnvironment()+" closed!");
             AppDriver.closeDriver();
         }
         else if (OSHandler.getCurrentOS().equalsIgnoreCase("android")) {
             ((AndroidDriver) AppDriver.getCurrentDriver()).terminateApp(EnvironmentHandler.getEnvironment());
-            System.out.println("Following App closed: "+OSHandler.getCurrentOS()+ EnvironmentHandler.getEnvironment());
+            System.out.println("Platform: "+OSHandler.getCurrentOS()+ " "+EnvironmentHandler.getEnvironment()+" closed!");
             AppDriver.closeDriver();
         }
         else {

@@ -20,11 +20,11 @@
     "password": "eLounge2019BP!"
   },
   "investmentUser2": {
-    "username": "USER518",
+    "username": "USER519",
     "password": "eLounge2019BP!"
   },
   "wrongUser": {
-    "username": "TestKek",
+    "username": "WrongUser",
     "password": "1234!"
   }
 }
